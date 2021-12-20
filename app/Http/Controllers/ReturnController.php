@@ -226,7 +226,7 @@ class ReturnController extends Controller
                 return redirect()->back()->withErrors($v->errors());
             
             $documentName = $document->getClientOriginalName();
-            $document->move('public/return/documents', $documentName);
+            $document->move('return/documents', $documentName);
             $data['document'] = $documentName;
         }
 
@@ -449,7 +449,7 @@ class ReturnController extends Controller
                 return redirect()->back()->withErrors($v->errors());
 
             $documentName = $document->getClientOriginalName();
-            $document->move('public/return/documents', $documentName);
+            $document->move('return/documents', $documentName);
             $data['document'] = $documentName;
         }
 

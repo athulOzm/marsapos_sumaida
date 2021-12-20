@@ -34,7 +34,7 @@
                 <tr data-id="{{$brand->id}}">
                     <td>{{$key}}</td>
                     @if($brand->image)
-                    <td> <img src="{{url('public/images/brand',$brand->image)}}" height="80" width="80">
+                    <td> <img src="{{url('images/brand',$brand->image)}}" height="80" width="80">
                     </td>
                     @else
                     <td>No Image</td>
@@ -102,7 +102,7 @@
         <div class="modal-body">
             <p class="italic"><small>{{trans('file.The field labels marked with * are required input fields')}}.</small></p>
             <p>{{trans('file.The correct column order is')}} (title*, image [file name]) {{trans('file.and you must follow this')}}.</p>
-            <p>{{trans('file.To display Image it must be stored in')}} public/images/brand {{trans('file.directory')}}</p>
+            <p>{{trans('file.To display Image it must be stored in')}} images/brand {{trans('file.directory')}}</p>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -113,7 +113,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label> {{trans('file.Sample File')}}</label>
-                        <a href="public/sample_file/sample_brand.csv" class="btn btn-info btn-block btn-md"><i class="dripicons-download"></i>  {{trans('file.Download')}}</a>
+                        <a href="sample_file/sample_brand.csv" class="btn btn-info btn-block btn-md"><i class="dripicons-download"></i>  {{trans('file.Download')}}</a>
                     </div>
                 </div>
             </div>

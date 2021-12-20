@@ -1,26 +1,5 @@
 <?php return array (
-  'bigbharatjain/laravel-clickatell' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Clickatell\\ClickatellServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Clickatell' => 'Clickatell\\ClickatellFacade',
-    ),
-  ),
-  'facade/ignition' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Facade\\Ignition\\IgnitionServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Flare' => 'Facade\\Ignition\\Facades\\Flare',
-    ),
-  ),
+
   'fideloper/proxy' => 
   array (
     'providers' => 
@@ -46,13 +25,7 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
-  'laravel/ui' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Ui\\UiServiceProvider',
-    ),
-  ),
+ 
   'laravelcollective/html' => 
   array (
     'providers' => 
@@ -95,13 +68,7 @@
       0 => 'Carbon\\Laravel\\ServiceProvider',
     ),
   ),
-  'nunomaduro/collision' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    ),
-  ),
+ 
   'spatie/laravel-permission' => 
   array (
     'providers' => 

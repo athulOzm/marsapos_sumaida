@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/png" href="<?php echo e(url('public/logo', $general_setting->site_logo)); ?>" />
+    <link rel="icon" type="image/png" href="<?php echo e(url('logo', $general_setting->site_logo)); ?>" />
     <title><?php echo e($general_setting->site_title); ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -88,7 +88,7 @@
     <div id="receipt-data">
         <div class="centered">
           <?php if($general_setting->site_logo): ?>
-                <img src="<?php echo e(url('public/logo', $general_setting->site_logo)); ?>" height="50" width="50" style="margin:0px 0px;">
+                <img src="<?php echo e(url('logo', $general_setting->site_logo)); ?>" height="50" width="50" style="margin:0px 0px;">
             <?php endif; ?>
 		  <h1><?php echo e($general_setting->site_title); ?></h1>
         		 <p>CR No: 

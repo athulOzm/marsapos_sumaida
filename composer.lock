@@ -5079,19 +5079,6 @@
                 "laravel/telescope": "^2.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Facade\\Ignition\\IgnitionServiceProvider"
-                    ],
-                    "aliases": {
-                        "Flare": "Facade\\Ignition\\Facades\\Flare"
-                    }
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Facade\\Ignition\\": "src"
@@ -5436,16 +5423,7 @@
                 "phpunit/phpunit": "^8.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Ui\\UiServiceProvider"
-                    ]
-                }
-            },
+         
             "autoload": {
                 "psr-4": {
                     "Laravel\\Ui\\": "src/"
@@ -5611,13 +5589,7 @@
                 "phpunit/phpunit": "~8.0"
             },
             "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider"
-                    ]
-                }
-            },
+          
             "autoload": {
                 "psr-4": {
                     "NunoMaduro\\Collision\\": "src/"

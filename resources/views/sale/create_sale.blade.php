@@ -728,10 +728,10 @@
     <div class="container-fluid">
         <div class="row">
             <audio id="mysoundclip1" preload="auto">
-                <source src="{{url('public/beep/beep-timber.mp3')}}"></source>
+                <source src="{{url('beep/beep-timber.mp3')}}"></source>
             </audio>
             <audio id="mysoundclip2" preload="auto">
-                <source src="{{url('public/beep/beep-07.mp3')}}"></source>
+                <source src="{{url('beep/beep-07.mp3')}}"></source>
             </audio>
             <div class="col-md-6">
                 <div class="card">
@@ -1348,9 +1348,9 @@
                             @foreach($lims_category_list as $category)
                             <div class="col-md-3 category-img text-center" data-category="{{$category->id}}">
                                 @if($category->image)
-                                    <img  src="{{url('public/images/category', $category->image)}}" />
+                                    <img  src="{{url('images/category', $category->image)}}" />
                                 @else
-                                    <img  src="{{url('public/images/product/zummXD2dvAtI.png')}}" />
+                                    <img  src="{{url('images/product/zummXD2dvAtI.png')}}" />
                                 @endif
                                 <p class="text-center">{{$category->name}}</p>
                             </div>
@@ -1370,12 +1370,12 @@
                             @foreach($lims_brand_list as $brand)
                             @if($brand->image)
                                 <div class="col-md-3 brand-img text-center" data-brand="{{$brand->id}}">
-                                    <img  src="{{url('public/images/brand',$brand->image)}}" />
+                                    <img  src="{{url('images/brand',$brand->image)}}" />
                                     <p class="text-center">{{$brand->title}}</p>
                                 </div>
                             @else
                                 <div class="col-md-3 brand-img" data-brand="{{$brand->id}}">
-                                    <img  src="{{url('public/images/product/zummXD2dvAtI.png')}}" />
+                                    <img  src="{{url('images/product/zummXD2dvAtI.png')}}" />
                                     <p class="text-center">{{$brand->title}}</p>
                                 </div>
                             @endif
@@ -1407,32 +1407,32 @@
                             <tbody>
                             @for ($i=0; $i < ceil($product_number/5); $i++)
                                 <tr>
-                                    <td class="product-img sound-btn" title="{{$lims_product_list[0+$i*5]->name}}" data-product ="{{$lims_product_list[0+$i*5]->code . ' (' . $lims_product_list[0+$i*5]->name . ')'}}"><img  src="{{url('public/images/product',$lims_product_list[0+$i*5]->base_image)}}" width="100%" />
+                                    <td class="product-img sound-btn" title="{{$lims_product_list[0+$i*5]->name}}" data-product ="{{$lims_product_list[0+$i*5]->code . ' (' . $lims_product_list[0+$i*5]->name . ')'}}"><img  src="{{url('images/product',$lims_product_list[0+$i*5]->base_image)}}" width="100%" />
                                         <p>{{$lims_product_list[0+$i*5]->name}}</p>
                                     </td>
                                     @if(!empty($lims_product_list[1+$i*5]))
-                                    <td class="product-img sound-btn" title="{{$lims_product_list[1+$i*5]->name}}" data-product ="{{$lims_product_list[1+$i*5]->code . ' (' . $lims_product_list[1+$i*5]->name . ')'}}"><img  src="{{url('public/images/product',$lims_product_list[1+$i*5]->base_image)}}" width="100%" />
+                                    <td class="product-img sound-btn" title="{{$lims_product_list[1+$i*5]->name}}" data-product ="{{$lims_product_list[1+$i*5]->code . ' (' . $lims_product_list[1+$i*5]->name . ')'}}"><img  src="{{url('images/product',$lims_product_list[1+$i*5]->base_image)}}" width="100%" />
                                         <p>{{$lims_product_list[1+$i*5]->name}}</p>
                                     </td>
                                     @else
                                     <td></td>
                                     @endif
                                     @if(!empty($lims_product_list[2+$i*5]))
-                                    <td class="product-img sound-btn" title="{{$lims_product_list[2+$i*5]->name}}" data-product ="{{$lims_product_list[2+$i*5]->code . ' (' . $lims_product_list[2+$i*5]->name . ')'}}"><img  src="{{url('public/images/product',$lims_product_list[2+$i*5]->base_image)}}" width="100%" />
+                                    <td class="product-img sound-btn" title="{{$lims_product_list[2+$i*5]->name}}" data-product ="{{$lims_product_list[2+$i*5]->code . ' (' . $lims_product_list[2+$i*5]->name . ')'}}"><img  src="{{url('images/product',$lims_product_list[2+$i*5]->base_image)}}" width="100%" />
                                         <p>{{$lims_product_list[2+$i*5]->name}}</p>
                                     </td>
                                     @else
                                     <td></td>
                                     @endif
                                     @if(!empty($lims_product_list[3+$i*5]))
-                                    <td class="product-img sound-btn" title="{{$lims_product_list[3+$i*5]->name}}" data-product ="{{$lims_product_list[3+$i*5]->code . ' (' . $lims_product_list[3+$i*5]->name . ')'}}"><img  src="{{url('public/images/product',$lims_product_list[3+$i*5]->base_image)}}" width="100%" />
+                                    <td class="product-img sound-btn" title="{{$lims_product_list[3+$i*5]->name}}" data-product ="{{$lims_product_list[3+$i*5]->code . ' (' . $lims_product_list[3+$i*5]->name . ')'}}"><img  src="{{url('images/product',$lims_product_list[3+$i*5]->base_image)}}" width="100%" />
                                         <p>{{$lims_product_list[3+$i*5]->name}}</p>
                                     </td>
                                     @else
                                     <td></td>
                                     @endif
                                     @if(!empty($lims_product_list[4+$i*5]))
-                                    <td class="product-img sound-btn" title="{{$lims_product_list[4+$i*5]->name}}" data-product ="{{$lims_product_list[4+$i*5]->code . ' (' . $lims_product_list[4+$i*5]->name . ')'}}"><img  src="{{url('public/images/product',$lims_product_list[4+$i*5]->base_image)}}" width="100%" />
+                                    <td class="product-img sound-btn" title="{{$lims_product_list[4+$i*5]->name}}" data-product ="{{$lims_product_list[4+$i*5]->code . ' (' . $lims_product_list[4+$i*5]->name . ')'}}"><img  src="{{url('images/product',$lims_product_list[4+$i*5]->base_image)}}" width="100%" />
                                         <p>{{$lims_product_list[4+$i*5]->name}}</p>
                                     </td>
                                     @else
@@ -1791,10 +1791,10 @@ $('.category-img').on('click', function(){
             $.each(data['name'], function(index) {
                 var product_info = data['code'][index]+' (' + data['name'][index] + ')';
                 if(index % 5 == 0 && index != 0){
-                    tableData += '</tr><tr><td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../public/images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
+                    tableData += '</tr><tr><td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
                 }
                 else
-                    tableData += '<td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../public/images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
+                    tableData += '<td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
             });
 
             if(data['name'].length % 5){
@@ -1847,10 +1847,10 @@ $('.brand-img').on('click', function(){
             $.each(data['name'], function(index) {
                 var product_info = data['code'][index]+' (' + data['name'][index] + ')';
                 if(index % 5 == 0 && index != 0){
-                    tableData += '</tr><tr><td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../public/images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
+                    tableData += '</tr><tr><td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
                 }
                 else
-                    tableData += '<td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../public/images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
+                    tableData += '<td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
             });
 
             if(data['name'].length % 5){
@@ -1893,10 +1893,10 @@ $('#featured-filter').on('click', function(){
             $.each(data['name'], function(index) {
                 var product_info = data['code'][index]+' (' + data['name'][index] + ')';
                 if(index % 5 == 0 && index != 0){
-                    tableData += '</tr><tr><td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../public/images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
+                    tableData += '</tr><tr><td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
                 }
                 else
-                    tableData += '<td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../public/images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
+                    tableData += '<td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="../../images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p></td>';
             });
 
             if(data['name'].length % 5){
@@ -2651,7 +2651,7 @@ function cheque() {
 }
 
 function creditCard() {
-    $.getScript( "../../public/vendor/stripe/checkout.js" );
+    $.getScript( "../../vendor/stripe/checkout.js" );
     $(".card-element").show();
     $(".card-errors").show();
     $("#cheque").hide();

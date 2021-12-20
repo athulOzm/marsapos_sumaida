@@ -36,7 +36,7 @@ class BrandController extends Controller
             $ext = pathinfo($image->getClientOriginalName(), PATHINFO_EXTENSION);
             $imageName = date("Ymdhis");
             $imageName = $imageName . '.' . $ext;
-            $image->move('public/images/brand', $imageName);
+            $image->move('images/brand', $imageName);
             $input['image'] = $imageName;
         }
         Brand::create($input);
@@ -68,7 +68,7 @@ class BrandController extends Controller
             $ext = pathinfo($image->getClientOriginalName(), PATHINFO_EXTENSION);
             $imageName = date("Ymdhis");
             $imageName = $imageName . '.' . $ext;
-            $image->move('public/images/brand', $imageName);
+            $image->move('images/brand', $imageName);
             $lims_brand_data->image = $imageName;
         }
         $lims_brand_data->save();
@@ -128,7 +128,7 @@ class BrandController extends Controller
     {
         $lims_brand_data = Brand::findOrFail($id);
         $lims_brand_data->is_active = false;
-        unlink('public/images/brand/'.$lims_brand_data->image);
+        unlink('images/brand/'.$lims_brand_data->image);
         $lims_brand_data->save();
         return redirect('brand')->with('not_permitted', 'Brand deleted successfully!');
     }

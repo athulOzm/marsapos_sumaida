@@ -748,10 +748,10 @@
     <div class="container-fluid">
         <div class="row">
             <audio id="mysoundclip1" preload="auto">
-                <source src="<?php echo e(url('public/beep/beep-timber.mp3')); ?>"></source>
+                <source src="<?php echo e(url('beep/beep-timber.mp3')); ?>"></source>
             </audio>
             <audio id="mysoundclip2" preload="auto">
-                <source src="<?php echo e(url('public/beep/beep-07.mp3')); ?>"></source>
+                <source src="<?php echo e(url('beep/beep-07.mp3')); ?>"></source>
             </audio>
             <div class="col-md-6">
                 <div class="card">
@@ -1311,9 +1311,9 @@
                             <?php $__currentLoopData = $lims_category_list; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div class="col-md-3 category-img text-center" data-category="<?php echo e($category->id); ?>">
                                 <?php if($category->image): ?>
-                                    <img  src="<?php echo e(url('public/images/category', $category->image)); ?>" />
+                                    <img  src="<?php echo e(url('images/category', $category->image)); ?>" />
                                 <?php else: ?>
-                                    <img  src="<?php echo e(url('public/images/product/zummXD2dvAtI.png')); ?>" />
+                                    <img  src="<?php echo e(url('images/product/zummXD2dvAtI.png')); ?>" />
                                 <?php endif; ?>
                                 <p class="text-center"><?php echo e($category->name); ?></p>
                             </div>
@@ -1333,12 +1333,12 @@
                             <?php $__currentLoopData = $lims_brand_list; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $brand): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <?php if($brand->image): ?>
                                 <div class="col-md-3 brand-img text-center" data-brand="<?php echo e($brand->id); ?>">
-                                    <img  src="<?php echo e(url('public/images/brand',$brand->image)); ?>" />
+                                    <img  src="<?php echo e(url('images/brand',$brand->image)); ?>" />
                                     <p class="text-center"><?php echo e($brand->title); ?></p>
                                 </div>
                             <?php else: ?>
                                 <div class="col-md-3 brand-img" data-brand="<?php echo e($brand->id); ?>">
-                                    <img  src="<?php echo e(url('public/images/product/zummXD2dvAtI.png')); ?>" />
+                                    <img  src="<?php echo e(url('images/product/zummXD2dvAtI.png')); ?>" />
                                     <p class="text-center"><?php echo e($brand->title); ?></p>
                                 </div>
                             <?php endif; ?>
@@ -1370,12 +1370,12 @@
                             <tbody>
                             <?php for($i=0; $i < ceil($product_number/5); $i++): ?>
                                 <tr>
-                                    <td class="product-img sound-btn" title="<?php echo e($lims_product_list[0+$i*5]->name); ?>" data-product ="<?php echo e($lims_product_list[0+$i*5]->code . ' (' . $lims_product_list[0+$i*5]->name . ')'); ?>"><img  src="<?php echo e(url('public/images/product',$lims_product_list[0+$i*5]->base_image)); ?>" width="100%" />
+                                    <td class="product-img sound-btn" title="<?php echo e($lims_product_list[0+$i*5]->name); ?>" data-product ="<?php echo e($lims_product_list[0+$i*5]->code . ' (' . $lims_product_list[0+$i*5]->name . ')'); ?>"><img  src="<?php echo e(url('images/product',$lims_product_list[0+$i*5]->base_image)); ?>" width="100%" />
                                         <p><?php echo e($lims_product_list[0+$i*5]->name); ?></p>
                                         <span><?php echo e($lims_product_list[0+$i*5]->code); ?></span>
                                     </td>
                                     <?php if(!empty($lims_product_list[1+$i*5])): ?>
-                                    <td class="product-img sound-btn" title="<?php echo e($lims_product_list[1+$i*5]->name); ?>" data-product ="<?php echo e($lims_product_list[1+$i*5]->code . ' (' . $lims_product_list[1+$i*5]->name . ')'); ?>"><img  src="<?php echo e(url('public/images/product',$lims_product_list[1+$i*5]->base_image)); ?>" width="100%" />
+                                    <td class="product-img sound-btn" title="<?php echo e($lims_product_list[1+$i*5]->name); ?>" data-product ="<?php echo e($lims_product_list[1+$i*5]->code . ' (' . $lims_product_list[1+$i*5]->name . ')'); ?>"><img  src="<?php echo e(url('images/product',$lims_product_list[1+$i*5]->base_image)); ?>" width="100%" />
                                         <p><?php echo e($lims_product_list[1+$i*5]->name); ?></p>
                                         <span><?php echo e($lims_product_list[1+$i*5]->code); ?></span>
                                     </td>
@@ -1383,7 +1383,7 @@
                                     <td style="border:none;"></td>
                                     <?php endif; ?>
                                     <?php if(!empty($lims_product_list[2+$i*5])): ?>
-                                    <td class="product-img sound-btn" title="<?php echo e($lims_product_list[2+$i*5]->name); ?>" data-product ="<?php echo e($lims_product_list[2+$i*5]->code . ' (' . $lims_product_list[2+$i*5]->name . ')'); ?>"><img  src="<?php echo e(url('public/images/product',$lims_product_list[2+$i*5]->base_image)); ?>" width="100%" />
+                                    <td class="product-img sound-btn" title="<?php echo e($lims_product_list[2+$i*5]->name); ?>" data-product ="<?php echo e($lims_product_list[2+$i*5]->code . ' (' . $lims_product_list[2+$i*5]->name . ')'); ?>"><img  src="<?php echo e(url('images/product',$lims_product_list[2+$i*5]->base_image)); ?>" width="100%" />
                                         <p><?php echo e($lims_product_list[2+$i*5]->name); ?></p>
                                         <span><?php echo e($lims_product_list[2+$i*5]->code); ?></span>
                                     </td>
@@ -1391,7 +1391,7 @@
                                     <td style="border:none;"></td>
                                     <?php endif; ?>
                                     <?php if(!empty($lims_product_list[3+$i*5])): ?>
-                                    <td class="product-img sound-btn" title="<?php echo e($lims_product_list[3+$i*5]->name); ?>" data-product ="<?php echo e($lims_product_list[3+$i*5]->code . ' (' . $lims_product_list[3+$i*5]->name . ')'); ?>"><img  src="<?php echo e(url('public/images/product',$lims_product_list[3+$i*5]->base_image)); ?>" width="100%" />
+                                    <td class="product-img sound-btn" title="<?php echo e($lims_product_list[3+$i*5]->name); ?>" data-product ="<?php echo e($lims_product_list[3+$i*5]->code . ' (' . $lims_product_list[3+$i*5]->name . ')'); ?>"><img  src="<?php echo e(url('images/product',$lims_product_list[3+$i*5]->base_image)); ?>" width="100%" />
                                         <p><?php echo e($lims_product_list[3+$i*5]->name); ?></p>
                                         <span><?php echo e($lims_product_list[3+$i*5]->code); ?></span>
                                     </td>
@@ -1399,7 +1399,7 @@
                                     <td style="border:none;"></td>
                                     <?php endif; ?>
                                     <?php if(!empty($lims_product_list[4+$i*5])): ?>
-                                    <td class="product-img sound-btn" title="<?php echo e($lims_product_list[4+$i*5]->name); ?>" data-product ="<?php echo e($lims_product_list[4+$i*5]->code . ' (' . $lims_product_list[4+$i*5]->name . ')'); ?>"><img  src="<?php echo e(url('public/images/product',$lims_product_list[4+$i*5]->base_image)); ?>" width="100%" />
+                                    <td class="product-img sound-btn" title="<?php echo e($lims_product_list[4+$i*5]->name); ?>" data-product ="<?php echo e($lims_product_list[4+$i*5]->code . ' (' . $lims_product_list[4+$i*5]->name . ')'); ?>"><img  src="<?php echo e(url('images/product',$lims_product_list[4+$i*5]->base_image)); ?>" width="100%" />
                                         <p><?php echo e($lims_product_list[4+$i*5]->name); ?></p>
                                         <span><?php echo e($lims_product_list[4+$i*5]->code); ?></span>
                                     </td>
@@ -1627,7 +1627,7 @@
 								</div>
 								</div>
 						       </div>
-							<!--<div class="col-md-6"><img src="<?php echo e(url('public/img','BodyMeasurement.jpg')); ?>" height="750" width="300"></div>-->
+							<!--<div class="col-md-6"><img src="<?php echo e(url('img','BodyMeasurement.jpg')); ?>" height="750" width="300"></div>-->
 						</div>
 						
                         
@@ -2480,7 +2480,7 @@ $("#print-btn").on("click", function(){
       var divToPrint=document.getElementById('sale-details');
       var newWin=window.open('','Print-Window');
       newWin.document.open();
-      newWin.document.write('<link rel="stylesheet" href="<?php echo asset('public/vendor/bootstrap/css/bootstrap.min.css') ?>" type="text/css"><style type="text/css">@media  print {.modal-dialog { max-width: 1000px;} }</style><body onload="window.print()">'+divToPrint.innerHTML+'</body>');
+      newWin.document.write('<link rel="stylesheet" href="<?php echo asset('vendor/bootstrap/css/bootstrap.min.css') ?>" type="text/css"><style type="text/css">@media  print {.modal-dialog { max-width: 1000px;} }</style><body onload="window.print()">'+divToPrint.innerHTML+'</body>');
       newWin.document.close();
       setTimeout(function(){newWin.close();},10);
 });
@@ -2542,9 +2542,9 @@ function populateProduct(data) {
         $.each(data['name'], function(index) {
             var product_info = data['code'][index]+' (' + data['name'][index] + ')';
             if(index % 5 == 0 && index != 0)
-                tableData += '</tr><tr><td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="public/images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p><span>'+data['code'][index]+'</span></td>';
+                tableData += '</tr><tr><td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p><span>'+data['code'][index]+'</span></td>';
             else
-                tableData += '<td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="public/images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p><span>'+data['code'][index]+'</span></td>';
+                tableData += '<td class="product-img sound-btn" title="'+data['name'][index]+'" data-product = "'+product_info+'"><img  src="images/product/'+data['image'][index]+'" width="100%" /><p>'+data['name'][index]+'</p><span>'+data['code'][index]+'</span></td>';
         });
 
         if(data['name'].length % 5){
@@ -3342,7 +3342,7 @@ function cheque() {
 }
 
 function creditCard() {
-    $.getScript( "public/vendor/stripe/checkout.js" );
+    $.getScript( "vendor/stripe/checkout.js" );
     $(".card-element").show();
     $(".card-errors").show();
     $(".cheque").hide();

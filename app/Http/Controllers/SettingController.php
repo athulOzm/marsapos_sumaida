@@ -77,7 +77,7 @@ class SettingController extends Controller
         $logo = $request->site_logo;
         if ($logo) {
             $logoName = $logo->getClientOriginalName();
-            $logo->move('public/logo', $logoName);
+            $logo->move('logo', $logoName);
             $general_setting->site_logo = $logoName;
         }
         $general_setting->save();
@@ -177,7 +177,7 @@ class SettingController extends Controller
             readfile($backup_file_name);
             exec('rm ' . $backup_file_name); */
         }
-        return redirect('public/' . $zipFileName);
+        return redirect('' . $zipFileName);
     }
 
     public function changeTheme($theme)

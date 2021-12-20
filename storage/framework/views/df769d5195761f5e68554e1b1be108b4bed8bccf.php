@@ -34,7 +34,7 @@
                 <tr data-id="<?php echo e($brand->id); ?>">
                     <td><?php echo e($key); ?></td>
                     <?php if($brand->image): ?>
-                    <td> <img src="<?php echo e(url('public/images/brand',$brand->image)); ?>" height="80" width="80">
+                    <td> <img src="<?php echo e(url('images/brand',$brand->image)); ?>" height="80" width="80">
                     </td>
                     <?php else: ?>
                     <td>No Image</td>
@@ -110,7 +110,7 @@
         <div class="modal-body">
             <p class="italic"><small><?php echo e(trans('file.The field labels marked with * are required input fields')); ?>.</small></p>
             <p><?php echo e(trans('file.The correct column order is')); ?> (title*, image [file name]) <?php echo e(trans('file.and you must follow this')); ?>.</p>
-            <p><?php echo e(trans('file.To display Image it must be stored in')); ?> public/images/brand <?php echo e(trans('file.directory')); ?></p>
+            <p><?php echo e(trans('file.To display Image it must be stored in')); ?> images/brand <?php echo e(trans('file.directory')); ?></p>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -122,7 +122,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label> <?php echo e(trans('file.Sample File')); ?></label>
-                        <a href="public/sample_file/sample_brand.csv" class="btn btn-info btn-block btn-md"><i class="dripicons-download"></i>  <?php echo e(trans('file.Download')); ?></a>
+                        <a href="sample_file/sample_brand.csv" class="btn btn-info btn-block btn-md"><i class="dripicons-download"></i>  <?php echo e(trans('file.Download')); ?></a>
                     </div>
                 </div>
             </div>

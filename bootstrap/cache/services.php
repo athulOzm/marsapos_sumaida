@@ -23,17 +23,15 @@
     19 => 'Illuminate\\Translation\\TranslationServiceProvider',
     20 => 'Illuminate\\Validation\\ValidationServiceProvider',
     21 => 'Illuminate\\View\\ViewServiceProvider',
-    22 => 'Clickatell\\ClickatellServiceProvider',
-    23 => 'Facade\\Ignition\\IgnitionServiceProvider',
     24 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     25 => 'Intervention\\Image\\ImageServiceProvider',
     26 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    27 => 'Laravel\\Ui\\UiServiceProvider',
+ 
     28 => 'Collective\\Html\\HtmlServiceProvider',
     29 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
     30 => 'Milon\\Barcode\\BarcodeServiceProvider',
     31 => 'Carbon\\Laravel\\ServiceProvider',
-    32 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+   
     33 => 'Spatie\\Permission\\PermissionServiceProvider',
     34 => 'Srmklive\\PayPal\\Providers\\PayPalServiceProvider',
     35 => 'App\\Providers\\AppServiceProvider',
@@ -53,14 +51,12 @@
     7 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
-    10 => 'Clickatell\\ClickatellServiceProvider',
-    11 => 'Facade\\Ignition\\IgnitionServiceProvider',
     12 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     13 => 'Intervention\\Image\\ImageServiceProvider',
     14 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
     15 => 'Milon\\Barcode\\BarcodeServiceProvider',
     16 => 'Carbon\\Laravel\\ServiceProvider',
-    17 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+ 
     18 => 'Spatie\\Permission\\PermissionServiceProvider',
     19 => 'Srmklive\\PayPal\\Providers\\PayPalServiceProvider',
     20 => 'App\\Providers\\AppServiceProvider',
@@ -175,8 +171,7 @@
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
-    'Laravel\\Ui\\AuthCommand' => 'Laravel\\Ui\\UiServiceProvider',
-    'Laravel\\Ui\\UiCommand' => 'Laravel\\Ui\\UiServiceProvider',
+ 
     'html' => 'Collective\\Html\\HtmlServiceProvider',
     'form' => 'Collective\\Html\\HtmlServiceProvider',
     'Collective\\Html\\HtmlBuilder' => 'Collective\\Html\\HtmlServiceProvider',
@@ -223,9 +218,7 @@
     'Laravel\\Tinker\\TinkerServiceProvider' => 
     array (
     ),
-    'Laravel\\Ui\\UiServiceProvider' => 
-    array (
-    ),
+ 
     'Collective\\Html\\HtmlServiceProvider' => 
     array (
     ),
