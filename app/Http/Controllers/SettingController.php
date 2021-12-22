@@ -62,7 +62,7 @@ class SettingController extends Controller
         $searchArray = array('APP_TIMEZONE='.env('APP_TIMEZONE'));
         $replaceArray = array('APP_TIMEZONE='.$data['timezone']);
 
-        file_put_contents($path, str_replace($searchArray, $replaceArray, file_get_contents($path)));
+        //file_put_contents($path, str_replace($searchArray, $replaceArray, file_get_contents($path)));
 
         $general_setting = GeneralSetting::latest()->first();
         $general_setting->id = 1;
@@ -205,7 +205,7 @@ class SettingController extends Controller
 
         $replaceArray = array('MAIL_HOST="'.$data['mail_host'].'"', 'MAIL_PORT='.$data['port'], 'MAIL_FROM_ADDRESS="'.$data['mail_address'].'"', 'MAIL_FROM_NAME="'.$data['mail_name'].'"', 'MAIL_USERNAME="'.$data['mail_address'].'"', 'MAIL_PASSWORD="'.$data['password'].'"', 'MAIL_ENCRYPTION="'.$data['encryption'].'"');
         
-        file_put_contents($path, str_replace($searchArray, $replaceArray, file_get_contents($path)));
+        //file_put_contents($path, str_replace($searchArray, $replaceArray, file_get_contents($path)));
 
         return redirect()->back()->with('message', 'Data updated successfully');
     }
@@ -233,7 +233,7 @@ class SettingController extends Controller
             $replaceArray = array( 'SMS_GATEWAY='.$data['gateway'], 'CLICKATELL_API_KEY='.$data['api_key'] );
         }
 
-        file_put_contents($path, str_replace($searchArray, $replaceArray, file_get_contents($path)));
+       // file_put_contents($path, str_replace($searchArray, $replaceArray, file_get_contents($path)));
         return redirect()->back()->with('message', 'Data updated successfully');
     }
 
@@ -324,7 +324,7 @@ class SettingController extends Controller
 
         $replaceArray = array('PAYPAL_LIVE_API_USERNAME='.$data['paypal_username'], 'PAYPAL_LIVE_API_PASSWORD='.$data['paypal_password'], 'PAYPAL_LIVE_API_SECRET='.$data['paypal_signature'] );
 
-        file_put_contents($path, str_replace($searchArray, $replaceArray, file_get_contents($path)));
+       // file_put_contents($path, str_replace($searchArray, $replaceArray, file_get_contents($path)));
 
     	$pos_setting = PosSetting::firstOrNew(['id' => 1]);
     	$pos_setting->id = 1;
