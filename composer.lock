@@ -21,16 +21,7 @@
                 "shasum": ""
             },
             "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Clickatell\\ClickatellServiceProvider"
-                    ],
-                    "aliases": {
-                        "Clickatell": "Clickatell\\ClickatellFacade"
-                    }
-                }
-            },
+           
             "autoload": {
                 "psr-4": {
                     "Clickatell\\": "src/"
