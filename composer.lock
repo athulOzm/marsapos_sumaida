@@ -6,46 +6,7 @@
     ],
     "content-hash": "c6cbde6cd8310befb28361ed521a9bda",
     "packages": [
-        {
-            "name": "bigbharatjain/laravel-clickatell",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bigbharatjain/laravel-clickatell.git",
-                "reference": "3091c94a3f5b7afc4440bac2e37a52abe97a888f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bigbharatjain/laravel-clickatell/zipball/3091c94a3f5b7afc4440bac2e37a52abe97a888f",
-                "reference": "3091c94a3f5b7afc4440bac2e37a52abe97a888f",
-                "shasum": ""
-            },
-            "type": "library",
-           
-            "autoload": {
-                "psr-4": {
-                    "Clickatell\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bharat Jain",
-                    "email": "bharat.jain325@gmail.com"
-                }
-            ],
-            "description": "This package makes it easy to send sms using clickatell.com with Laravel 5.",
-            "keywords": [
-                "clickatell",
-                "laravel",
-                "laravel-clickatell",
-                "sms-laravel"
-            ],
-            "time": "2017-10-16T15:19:44+00:00"
-        },
+         
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "v0.1.1",

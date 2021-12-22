@@ -9,7 +9,6 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "bigbharatjain/laravel-clickatell": "^1.0",
         "doctrine/dbal": "^2.11",
         "fideloper/proxy": "^4.0",
         "gladcodes/keygen": "^1.1",

@@ -15,8 +15,8 @@ use App\HrmSetting;
 use DB;
 use ZipArchive;
 use Twilio\Rest\Client;
-use Clickatell\Rest;
-use Clickatell\ClickatellException;
+// use Clickatell\Rest;
+// use Clickatell\ClickatellException;
 
 class SettingController extends Controller
 {
